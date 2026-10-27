@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Thunder 앱 미리보기</title>
-    <meta name="description" content="Thunder 앱 화면 미리보기입니다. 이 브라우저 안에서만 동작합니다." />
-    <meta name="theme-color" content="#f2f4f6" />
+    <title>Thunder 앱 미리보기 — 우리 집 조명</title>
+    <meta
+      name="description"
+      content="거실, 침실, 주방의 전등을 켜고 끄고 밝기를 맞추는 Thunder 미리보기입니다. 이 브라우저 안에서만 동작합니다."
+    />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
@@ -27,16 +30,17 @@
       <div class="device" id="app">
         <header class="app-bar">
           <div>
-            <p class="app-kicker">미리보기</p>
-            <h1 id="screen-title">오늘</h1>
+            <p class="app-kicker">썬더</p>
+            <h1 id="screen-title">우리 집</h1>
           </div>
-          <a class="home-chip" href="../">회사 홈</a>
+          <a class="home-chip" href="../">Thunder 홈</a>
         </header>
+        <p id="live" class="live" aria-live="polite"></p>
         <div class="app-body" id="app-body"></div>
         <nav class="tabbar" aria-label="앱 탭">
-          <button type="button" data-tab="home" class="is-active">홈</button>
-          <button type="button" data-tab="log">기록</button>
-          <button type="button" data-tab="settings">설정</button>
+          <button type="button" data-tab="home" class="is-active" aria-current="page">우리 집</button>
+          <button type="button" data-tab="scenes">장면</button>
+          <button type="button" data-tab="voice">음성</button>
         </nav>
       </div>
     </div>
