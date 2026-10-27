@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Thunder — 설치 전에 화면을 먼저</title>
+    <title>Thunder — 집의 불을 말과 앱으로</title>
     <meta
       name="description"
-      content="Thunder는 ESA의 회사입니다. 회사 소개는 이 페이지에, 앱 화면은 같은 사이트의 미리보기에서 확인합니다."
+      content="Thunder(썬더)는 ESA의 가정용 전등 브랜드입니다. 앱으로 방마다 조절하고, 시리와 빅스비에는 썬더로 말합니다."
     />
     <meta name="theme-color" content="#3182f6" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -24,8 +24,9 @@
           Thunder
         </a>
         <nav class="nav-links" aria-label="주요">
-          <a href="#service">서비스</a>
-          <a href="preview/">앱 미리보기</a>
+          <a href="#lights">조명</a>
+          <a href="#voice">음성</a>
+          <a href="preview/">미리보기</a>
           <a href="https://jadegun1124.github.io/esa/">ESA</a>
         </nav>
       </div>
@@ -34,55 +35,80 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">ESA 계열 회사</p>
-          <h1>설치 전에,<br />화면을 먼저.</h1>
+          <p class="eyebrow">ESA의 가정용 전등 브랜드</p>
+          <h1>집의 불,<br />말 한마디로.</h1>
           <p class="lede">
-            Thunder는 오늘 꼭 기억할 일만 짧게 보여주는 앱을 만듭니다. 회사 이야기는 여기에 두고, 화면은 스토어 없이 이 사이트에서 미리 봅니다.
+            Thunder(썬더)는 거실, 침실, 주방의 전등을 앱과 음성으로 제어합니다. 화면에서 밝기를 맞추고, 시리와 빅스비에는 “썬더”라고 부릅니다.
           </p>
           <div class="actions">
             <a class="btn btn-primary" href="preview/">앱 미리보기</a>
             <a class="btn btn-ghost" href="https://jadegun1124.github.io/esa/">ESA 홈</a>
           </div>
         </div>
-        <a class="hero-phone" href="preview/" aria-label="앱 미리보기">
+        <a class="hero-phone" href="preview/" aria-label="조명 앱 미리보기">
           <div class="phone">
             <div class="phone-top">
-              <strong>오늘</strong>
-              <span>미리보기</span>
+              <strong>우리 집</strong>
+              <span>2곳 켜짐</span>
             </div>
-            <ul class="phone-list">
-              <li><i></i><span>우산 챙기기</span></li>
-              <li><i></i><span>2시 회의</span></li>
-              <li class="done"><i></i><span>퇴근길 10분</span></li>
+            <ul class="room-preview">
+              <li class="is-on">
+                <span class="dot" aria-hidden="true"></span>
+                <span class="room-copy"><b>거실</b><small>메인등 · 80%</small></span>
+                <span class="switch is-on" aria-hidden="true"></span>
+              </li>
+              <li>
+                <span class="dot" aria-hidden="true"></span>
+                <span class="room-copy"><b>침실</b><small>천장등 · 꺼짐</small></span>
+                <span class="switch" aria-hidden="true"></span>
+              </li>
+              <li class="is-on">
+                <span class="dot" aria-hidden="true"></span>
+                <span class="room-copy"><b>주방</b><small>싱크등 · 100%</small></span>
+                <span class="switch is-on" aria-hidden="true"></span>
+              </li>
             </ul>
-            <p class="phone-note">체크는 이 브라우저에만 남습니다.</p>
+            <p class="phone-note">헤이 시리, 썬더로 거실 불 꺼줘</p>
           </div>
         </a>
       </section>
 
-      <section id="service" class="section">
-        <h2>필요한 것만 이 사이트에 있습니다.</h2>
+      <section id="lights" class="section">
+        <h2>방마다, 밝기까지.</h2>
+        <p class="sub">필요한 곳만 켜고, 장면으로 집 안을 한 번에 바꿉니다.</p>
         <div class="cards">
           <article>
-            <h3>회사 홈</h3>
-            <p>Thunder가 무엇을 만드는지, 한 화면에서 읽습니다.</p>
+            <h3>방의 전등</h3>
+            <p>거실, 침실, 주방, 서재, 욕실. 켜고 끄고, 밝기를 맞춥니다.</p>
           </article>
           <article>
-            <h3>앱 미리보기</h3>
-            <p>홈, 기록, 설정을 눌러 봅니다. 계정과 결제는 없습니다.</p>
+            <h3>장면</h3>
+            <p>영화, 취침, 식사, 독서. 집에 있는 불을 상황에 맞게 바꿉니다.</p>
           </article>
           <article>
-            <h3>ESA</h3>
-            <p>지주 회사 페이지로 언제든 돌아갑니다.</p>
+            <h3>음성은 썬더</h3>
+            <p>시리 단축어와 빅스비 앱 액션. 앱 안에서 계속 듣지 않습니다.</p>
           </article>
         </div>
+      </section>
+
+      <section id="voice" class="section voice">
+        <h2>“헤이 시리, 썬더로 거실 불 꺼줘.”</h2>
+        <p class="sub">
+          호출 이름은 썬더입니다. Thunder 앱이 마이크를 켜 두고 듣지 않습니다. 아이폰 단축어와 빅스비 앱 액션이 그 말을 조명으로 연결합니다.
+        </p>
+        <ul class="quotes">
+          <li><span>Siri</span>헤이 시리, 썬더로 거실 불 꺼줘</li>
+          <li><span>Bixby</span>하이 빅스비, 썬더로 침실 불 30%로 해줘</li>
+          <li><span>Siri</span>헤이 시리, 썬더로 취침 모드 켜줘</li>
+        </ul>
       </section>
 
       <section class="band">
         <div class="band-inner">
           <div>
-            <h2>스토어 밖에서도 흐름은 같습니다.</h2>
-            <p>미리보기는 이 브라우저에서만 동작합니다. 입력한 체크는 서버로 보내지 않습니다.</p>
+            <h2>화면에서 먼저 불을 켜 보세요.</h2>
+            <p>미리보기는 이 브라우저에서만 동작합니다. 계정, 결제, 서버는 없고, 바꾼 불은 탭을 닫으면 사라집니다.</p>
           </div>
           <a class="btn btn-primary" href="preview/">앱 미리보기</a>
         </div>
@@ -91,7 +117,10 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <p>© 2026 Thunder</p>
+        <div>
+          <p>© 2026 Thunder</p>
+          <p class="fine">ESA(Electric Smart Automation)의 가정용 전등 브랜드</p>
+        </div>
         <nav aria-label="하단">
           <a href="https://jadegun1124.github.io/esa/">ESA</a>
           <a href="preview/">앱 미리보기</a>
