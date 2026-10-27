@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Thunder 앱 미리보기</title>
+    <meta name="description" content="Thunder 앱 화면 미리보기입니다. 이 브라우저 안에서만 동작합니다." />
+    <meta name="theme-color" content="#f2f4f6" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <script type="module" src="/src/preview.js"></script>
+  </head>
+  <body class="preview-body">
+    <div class="stage">
+      <div class="stage-bar">
+        <a class="brand" href="../">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#3182f6"/><path fill="#fff" d="M36 8 16 36h14l-2 20 22-30H34l2-18z"/></svg></span>
+          Thunder
+        </a>
+        <p>앱 미리보기</p>
+        <a class="text-link" href="https://jadegun1124.github.io/esa/">ESA</a>
+      </div>
+
+      <div class="device" id="app">
+        <header class="app-bar">
+          <div>
+            <p class="app-kicker">미리보기</p>
+            <h1 id="screen-title">오늘</h1>
+          </div>
+          <a class="home-chip" href="../">회사 홈</a>
+        </header>
+        <div class="app-body" id="app-body"></div>
+        <nav class="tabbar" aria-label="앱 탭">
+          <button type="button" data-tab="home" class="is-active">홈</button>
+          <button type="button" data-tab="log">기록</button>
+          <button type="button" data-tab="settings">설정</button>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
